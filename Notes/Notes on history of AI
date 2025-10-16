@@ -1,0 +1,184 @@
+Notes from Blog officetimeline.com
+
+AI consists of 4 parts: 
+1. Machine Learning which involves learning patterns through exposure to maore data
+2. Natural Language Processing (NLP): facilitates the interaction between humans and computers through known languages
+3. Computer Vision: allows machines to interpret and understand visual information.
+4. Robotics: enables the creation of machines capable of peroforming tasks in the physical world.
+
+------
+
+In 1950s the modern concept of AI began to take shape with significant contributions attributed to the works of Turing and Mcarthy.
+
+-----
+
+In 1950 Alan Turing came up with the Turing Test.
+
+----
+In 1951 Marvin Minsky and Dean Edmonds created the first aritificial neural network SNARC to emulate a network comporsing of 40 neurons.
+---
+In 1952 Arthur Samuel created the Samuel checkers playing program, the first self learning program designed to play games.
+---
+In 1956 the term artificial intelligence is coined during the Dartmouth Summer Research Project on Aritificial Intelligence.
+---
+In 1956 A Newell C shaw and H A Simon workign for the RAND Corporation develop the Logic Theorist recognized as the pioneering aritificial intelligence program. This groundbreaking computer program was engineered for automated reasoning and succesfully proved 38 theorems from Principia Mathematica and discovered more efficient proofs for some of them.
+---
+In 1957:
+A. Newell, C. Shaw and H. A. Simon (RAND Corporation) develop the General Problem Solver (GPS-I), a computer program intended to work as a universal problem solver machine.
+
+Frank Rosenblatt develops the perceptron, an early ANN that laid the foundation for modern neural networks.
+
+John McCarthy creates Lisp, a programming language popular in the AI industry and among developers.
+
+----
+
+In 1959:
+
+Arthur Samuel popularizes the term “machine learning”, explaining that computers can be programmed to surpass their programmer.
+
+Oliver Selfridge introduces Pandemonium: A Paradigm for Learning, advancing self-improving pattern recognition in machine learning.
+
+------------
+In 1966:
+
+Joseph Weizenbaum creates ELIZA, an early NLP (natural language processing) computer program capable of engaging in conversations with humans. It is considered the first chatbot.
+
+Stanford Research Institute builds Shakey, the first mobile intelligent robot, setting the groundwork for self-driving cars and drones.
+
+--------------
+In 1973:
+The report Artificial Intelligence: A General Survey by James Lighthill is published. The report was critical of the unrealistic expectations surrounding AI and its limited progress. It highlighted the challenges and failures within the field, leading to a loss of confidence and to a substantial reduction in British government support for AI research in UK.
+
+--------------
+In 1974:
+The first AI winter begins marked by reduced funding and interest in AI due to a series of setbacks and unfulfilled promises.
+
+--------
+In 1980:
+Symbolic Lisp machines enter the market marking the revisival of AI but the market later collapsed
+
+----------
+In 1984:
+Marvin Minsky and Roger Schank coin the term “AI winter” at a meeting, expressing concerns about potential industry fallout. Their cautionary prediction about AI overhype materialized three years later.
+
+----------
+In 1985:
+Judea Pearl develops Bayesian networks causal analysis enablinfg computers to represent unceratinity using statisitical techniques enabling the modelling of intiriciate relationsships between the variables and the generation of probabilisitic inferences.
+This facilitates informed decision-making and predicitve analysis.
+
+---------
+In 1988:
+
+Peter Brown et al publishes A Statistical Approach to Language Translation, shaping a highly studied method in ML.
+
+------------------
+In 1989:
+
+Yan Lecunn, Yoshua bengio, and Patric Haffner demonstrate the applicability of convolutional nerual networks in recognizing handwritten
+characters highlighting the practical use of neural networks in real world applications
+
+--------
+In 1997:
+
+IBM’s Deep Blue defeats world chess champion Garry Kasparov in a six-game match, marking a significant milestone in the development of AI and computing power.
+
+-------
+In 2000 
+
+University of Montreal researchers (Yoshua Bengio) publish A Neural Probabilistic Language Model, proposing feedforward neural networks for language modeling.
+
+------------------
+In 2009:
+The paper Large-Scale Deep Unsupervised Learning Using Graphics Processors is published by Rajat Raina, Anand Madhavan, and Andrew Ng, suggesting the use of GPUs (graphics processing units) for training large-scale deep neural networks in an unsupervised learning setting.
+
+This work demonstrates the potential for GPUs to significantly accelerate the training of complex models, leading to advancements in the field of deep learning and the widespread adoption of GPU computing in machine learning research and applications.
+
+--------------
+In 2011:
+IBM’s Watson defeats human contestants on the quiz show Jeopardy!, demonstrating remarkable progress in natural language processing, machine learning and AI’s potential to understand and respond to complex human queries.
+
+Schmidhuber and team develops the first superhuman CNN, winning the German Traffic Sign Recognition competition.
+
+Apple introduces Siri, a voice-powered personal assistant, enabling voice-based interactions and tasks.
+
+----------------
+In 2012:
+
+Google’s deep neural network project achieves a breakthrough in image recognition, demonstrating the potential of deep learning in various applications. This triggered the explosion of deep learning research and implementation.
+
+-------------
+In 2013
+
+DeepMind shows impressive learning results using deep reinforcement learning to play video games, surpassing human expertise in games.
+
+China’s Tianhe-2 supercomputer doubled the world’s supercomputing speed, gaining and retaining the title of world’s fastest system. Tianhe-2 was world’s fastest system between 2013 and 2015. China maintained its no. 1 position until 2017 with another supercomputer, Sunway TaihuLight.
+
+----------
+In 2014
+
+Ian Goodfellow and his team invent generative adversarial networks, a type of machine learning framework applied for photo generation, image transformation, and deepfake creation.
+
+Facebook introduces DeepFace, an AI system capable of facial recognition that rivals human capabilities.
+
+----------
+In 2016:
+
+AlphaGo, developed by DeepMind (a subsidiary of Google), defeats the world champion in the ancient Chinese board game Go, demonstrating the potential of AI in complex decision-making tasks.
+
+----------
+In 2017:
+
+Sophia, a humanoid robot developed by Hanson Robotics, becomes the first robot to be granted citizenship by a country – Saudi Arabia (October 2017). In November 2017, Sophia became the United Nations Development Programme’s first Innovation Champion and the first non-human to hold a United Nations title.
+
+In the paper Attention Is All You Need, Google researchers introduce a groundbreaking neural network architecture, the Transformer (a new simple network architecture, the Transformer, based solely on attention mechanisms), spurring research into text parsing for large language models (LLMs).
+
+Physicist Stephen Hawking warned about AI’s potential catastrophic consequences without adequate preparation and prevention.
+
+----------
+In 2018:
+
+IBM, Airbus and the German Aerospace Center DLR develop Cimon, an innovative, AI-powered space robot that can assist astronauts.
+
+OpenAI’s GPT-1 (117 million model parameters) was introduced, laying the groundwork for future large language models (LLMs).
+
+Groove X releases Lovot, a home mini-robot that could sense and affect human moods.
+
+AI ethics and responsible AI become major topics of discussion, with organizations and governments focusing on creating guidelines and regulations for the ethical development and use of AI.
+
+----------
+In 2019:
+
+Microsoft launched the 17-billion-parameter Turing Natural Language Generation model.
+
+Google AI and Langone Medical Center’s deep learning algorithm outperformed radiologists in detecting lung cancers.
+
+----------
+In 2020:
+
+University of Oxford develops Curial, an AI test for rapid COVID-19 detection in emergency rooms.
+
+OpenAI releases GPT-3, an LLM with 175 billion parameters for humanlike text generation, marking a significant advancement in NLP.
+
+----------
+In 2021:
+
+OpenAI introduces Dall-E, an AI that can generate images from text.
+
+The University of California produced a pneumatic, four-legged soft robot.
+
+----------
+In 2022: 
+In November, OpenAI launches ChatGPT, offering a chat-based interface to its GPT-3.5 LLM. Just 5 days after launch, the application had already acquired over 1 million users.
+
+----------
+In 2023
+
+OpenAI introduces the GPT-4 multimodal LLM for text and image prompts.
+
+
+
+Need 3/4 pointers for OP-DLC bridge
+Motivation for OP DLC and BitVM
+EigenLayer 2
+
+Go through the website and share it with Vivek

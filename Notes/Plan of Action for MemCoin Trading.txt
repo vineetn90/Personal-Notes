@@ -1,0 +1,7 @@
+Plan of Action for MemCoin Trading:
+
+1. all the launchpads from which memcoins are coing out
+2. Taking the memcoin launchpads and indexing it with twitter announcements 
+(frequency of mentions, starting proce, delta, rate at which wallets are added, rate at which the price is fluctuating,
+how long this is lasting, if this coin was pumped for 10 hours then what were the indicators that showed this)
+3. Indicators for dump (how many wallets are reducing, rate at which is reducing)

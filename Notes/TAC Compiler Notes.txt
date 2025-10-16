@@ -1,0 +1,6 @@
+TAC Compiler Notes:
+
+1. Writing code is easier for u becuase it is a subset of Rust.
+2. We generate optimal tac's
+3. The R1CS we generate has to be optimised. We did not work on optimising that.
+4. We also have minimal error handling unlike circom where we have to generate the circuit to find the error. But we wanted to do a more detailed error handling but we did not continue it. 

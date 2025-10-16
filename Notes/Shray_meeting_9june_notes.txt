@@ -1,0 +1,529 @@
+Hello? Hi Karan. 
+K
+Karan Bharadwaj
+03:08
+Yes, I can hear you. How's it going? 
+S
+Shray Chandra
+03:11
+Not bad, just a bit jet lagged. Do you remember how long it took you to get over the jet lag? A week roughly. 
+K
+Karan Bharadwaj
+03:18
+Week, week and a. I'll introduce some of the team members who have joined us with us who's head of engineering, we'll sort of give him the overlay of the projects that we will sort of talk about today and deep dive into the first one that we will tackle. Then I have Mishaka from the AI team. All the agentic stuff will sort of be her purview and she'll build up those, both the backend and the AI agent to our AI agent framework. And we also have ants here who is our designer who sort of understand what the platform or set of projects will do and develop like a design language for it and then build out like the design for the front end. So I think from the next call Abiroop will also join today. He's unavailable. 
+S
+Shray Chandra
+04:32
+But so folks, just to say to set a little context, I think I know that you must. I don't know if it's the same people, you have Karan on the same things but I know the Capital Mind folks have sort of like kicked off two kind of like loose projects with you guys already. I know Akanksha is working on some mutual fund kind of analysis thing which would be very helpful. I think you guys could use it personally as well. And I think Anoop has maybe got in touch with about some stock rationale thing. Yes, and I think that's that those are two that are kind of already on the radar. I had, I wanted to actually start my own, if I may call it branch of projects or set of projects based on stuff I had been doing at Capital Mine. 
+S
+Shray Chandra
+05:21
+I've been spending some time on like trying to is this is not relevant but I've been spending some time trying to like think of what are the things we could do. And I, I figured that rather than over plan I'll just talk through them for a couple of minutes and then maybe then just dive into one and then we can just see the best way forward. And then Karan again as I said because of like working with the pressures of Capital Mind till recently were always doing whatever was most convenient for Capital Mine or most important for Capital Mind. And I think to some extent the projects will be doing for Akanksha and the projects we'll be doing for Anoop, they're all meant to solve either an imminent compliance problem or an imminent revenue problem or something like that. 
+S
+Shray Chandra
+06:03
+So I mean they've sort of been forced into that. The stuff I have might be a little more higher level. I mean more about just some simple stuff initially is around analytics, running quick analysis that otherwise generally people struggle to do or struggle to communicate and then slowly building on making things a little more interesting or a little more demanding as we go along. So I'll just talk through maybe four or five of them. So the first one is a thing which I keep getting asked which is in fact how much do I need to retire or how much do I need to be saving if I want to maintain a certain level of expenditure in my retirement years or whatever it might be seven, eight years ago in capital mind and I'll put the link, I'll share it. 
+S
+Shray Chandra
+06:54
+I'm sure Karan will create something I can just email you guys or whatever or a slack or whatever it might be. We had built a planning tool which we had done some decent work on but it never kind of took off because unfortunately at the time dealing with 2550 lakh customers who could give us, sorry customers who could give us like 50 lakhs or a crore, they really didn't care too much about the planning. 
+K
+Karan Bharadwaj
+07:15
+Aspect of things and so on. 
+S
+Shray Chandra
+07:16
+But on an ongoing basis I'm sure this is some question even you folks we have, I mean to the extent you're thinking about like things part of like retirement, like what does it mean if somehow 5 crore shows up in your bank account or 2 crores shows up in your bank account, Are you done? How much have you sort of solved of your life's retirement problems and so on? So I keep getting this. I have one example I have is I'm one of my very distant cousins. Her startup is doing extremely well right now so she's thinking she might be able to sell it in a couple of years. So what might she make? Who knows? 
+S
+Shray Chandra
+07:50
+We're saying what if you make 10 million now what I dollars that is she lives in London and here's the challenge you face which is what does $10 million mean? Can you spend what can you spend every year for the rest of your life or for many years given that there's inflation, you invest that money, it becomes a fairly non. It's not a difficult problem but it's very hard to like visualize and see it. And this is really the key thing that I want to talk about. The next one is a lot of the people I Interact with are either in the US or UK or india or in Australia. And they keep saying, hey, should I invest in the Indian market or should I invest in the US market? 
+S
+Shray Chandra
+08:29
+And I've had someone for the last several years just maintain a monthly sheet for me comparing the two. But I realized that a monthly sheet is very limited on point to point comparisons and so on. But I thought we could build this into a very simple tool with trivially available data. Like this is data you don't need to hunt around for. You can literally Download in like 5, 10 minutes. Point 3 this would wait once I think Capital Mind, I just okayed a buying of historical mutual fund data. But this is a question which everyone keeps having, what mutual fund should I invest in? Like and for this you need some, we've got some frameworks at Capital Mind use these criteria to evaluate their performance and how well they're doing. 
+S
+Shray Chandra
+09:10
+But putting this into like a tool that someone could interact with takes more effort and maybe that's something we could do. Bake in that logic, add this tool, maybe add the ability to customize or create custom logic and say, look, I have money, I want to invest in a good large cap fund. What should I invest in? Then it will tell you, hey, of all that happens, we think these are the best. And this is the quantitative reason why. The fourth is there's websites on how PMSs are the 50 lakh and above, how all the PMSs india are doing. All the information is public for the last couple of years. Monthly returns, how much AUM they had, whatever. We had someone write some basic SQL queries and create an Excel based report for us. 
+S
+Shray Chandra
+09:49
+We could turn this into a mini tool as well. So far I'm talking about relatively straightforward stuff. The first one is, well, the first one might be a little more demanding, but the first one is what does it mean? How much do I need to do xyz? The second one is India good or is the US good? Show me some basic analytics. The third is which Indian mutual fund category or fund within a catting shore? Fourth is, how are these PMS products doing india? Fifth could be a general purpose thing I do which is people say hey, I've invested in this. Or they say I've invested in this fund and they give me some snapshot of what the returns are. Is this good or bad? 
+S
+Shray Chandra
+10:23
+So I just say, okay, supposing I put the same money into some competitor stuff, how would it have done? And so on. Again, this is like a performance tool. So these are relatively straightforward, but I think useful building blocks that we could start with the first five. I don't know, I don't know if I should call these projects because like the first one is actually a project. 2, 3, 4, 5 might literally be tiny things that you guys do or whatever, but these are like building blocks but sort of I would just get used to working with whoever from your. Your team would end up working on this. We develop a bit of a rapport and on that. These are things I would then use with in my networks. Even though I'm not involved in the Capital Mine mutual fund or whatever per se. 
+S
+Shray Chandra
+11:04
+This is stuff I can either choose to promote through the Capital Mine brand or just use in my personal networks to try and get some feedback and build some whatever interest in these. Then I think we can start getting into some meatier stuff. One which in fact is the thing I've been tackling is I manage a very large personal investment portfolio abroad and I've got one retired engineer from capitalmind has been building, if I may call it, for lack of a better word, the clean database of all the transactions, the prices on those given days and what were the daily values of it. Wanted to put together a. 
+S
+Shray Chandra
+11:41
+He's not really good at front end so he just used some AI tool to put a basic mock up together but wanted to put together a fairly strong, a proper portfolio analyzing and analysis tool for myself based on actual data that's coming in on this fairly large book of mine abroad across accelerator rounds. Then I think things start getting a little more interesting with this data. How do we start finding triggers and actually finding patterns and reasons to buy a stock, exit a stock, whatever. This is starting to build some analytics and layers onto this. This is again actually I think some random stuff. Deepak manually maintains a lot of macro data. 
+S
+Shray Chandra
+12:18
+Just wanted to put it into like a bunch of web pages like each one where the data just automatically gets scraped and saved somewhere other than like Dropbox folder on his computer. This is one. And then I'm just going to pause here. I mean I was just trying to think of what else we could do. I haven't been able to get since. I mean I also just started thinking of this yesterday. I haven't been able to think how we can use agents and stuff to interact with this or do stuff better. I think definitely the one that obviously comes to mind is the foreign portfolio that we'll be creating the tool on or maybe some of these tools, maybe we can have, I don't know, an AI layer or agent layer where you can ask it questions or something to that extent. 
+S
+Shray Chandra
+13:01
+But I won't venture to go there because I think that's something you guys will be able to think of as we start doing some of this very basic stuff. So I guess what am I really saying here? I'm doing a whole bunch of things on spreadsheets. Sometimes I ask one junior engineer at capitalmind, he downloads data script, cleans it up, puts it in some, I guess SQL database, is that what they call them? And gives me some Excel version of that as well. So I'm running many things on spreadsheets. These are unfortunately quite unimpressive. Like let me show you what I'm. I'll give you the example because this is probably the first thing to work with. This is a cousin of distant cousin of mine. 
+S
+Shray Chandra
+13:35
+She could in theory maybe sell her startup in five years and make $10 million, which is a lot of money obviously. And she has no idea whether 10 million is a lot. A little. I mean it sounds like an enormous amount, but she lives in London So I mean 10 million is obviously not this 10 million india where you could probably whatever, like do whatever you wish. But what is 10 million good for? This is the thing I plan to currently show to her and maybe since she's like, she's good at Excel, she'll understand it. But look at how painful this sheet is really. I mean there's a learning curve to it. Now I think you are able to see this, sorry, planned a couple of years ago, eight, nine years ago, we created this at Capital nine. 
+S
+Shray Chandra
+14:24
+There are some sample plans and then we just didn't revisit it since this, we tried putting the same stuff into a nice calculator with the UI view and all that stuff here. What I realized is like 80% of the world actually prefers an Excel style table view. I mean it just wants some colors and whatever around it. This while useful, I mean they would like a toggle between say graph and table and so on. But this is something we had put together so I wanted to talk about. This is really what I thought is a very simple thing we could just both tackle. There are no deadlines really for any of them coming from me. I mean, I guess my point is this is just about us getting to start know each other, start working together on some projects. 
+S
+Shray Chandra
+15:06
+This is relatively useful personal finance or investing stuff. And maybe if we just go through it together for three to four months and build out all these small things, then we'll come up with ideas of how to start doing more intelligent stuff on top of this, with this as a common layer between me and you where you've understood how I think about things. We have some tools that you can interact with that I can interact with. And some of these questions are relatively one second. So that's really what comes to mind right now. Maybe you can just start with some of this stuff. Yes. Push out a few things. I have one question. 
+K
+Karan Bharadwaj
+15:55
+So I can already see that some of these things will. Can live on like the same. Same platform and some of these could be more standalone. But I wanted to get your. 
+S
+Shray Chandra
+16:08
+So this the first. 
+K
+Karan Bharadwaj
+16:09
+On the very first, the fire tool that you want to build with the goals and, you know, some expense in the future that you want to account for. Does this have to be like a standalone platform or standalone thing, or can it be absorbed into like a larger one that we built for you? 
+S
+Shray Chandra
+16:26
+So I'm looking at this sheet of projects again, which I'm hopefully trying to share on the screen. Literally the first five ones can very much just be the same thing. And I mean, we can probably tackle them in that order. This also, number eight can also be the very much the same thing. Six and seven, I think you'll have to take stock whether we want it to be part of the same thing or not. But they very much can. Like this can be just one big. I don't know what's the right word for it. Yeah, actually I don't have no candle for this, so. But yes, but these things don't need to be standing on. 
+K
+Karan Bharadwaj
+17:03
+I would. 
+S
+Shray Chandra
+17:04
+The only thing I would just mention here is since capitalmind is growing, I mean in whatever the interesting thing may be is that something we build. Like, let's say we build this fire thing, whatever. Taking the. And then when CapitalMind launches, somehow this starts getting a lot of traffic. We may want to revisit it to upgrade it. If actually for some reason people start getting into retirement a lot. That's just one thing I wanted to mention, which is when we're building stuff, we can do stuff that's good enough right now. I mean, I know there's a designer involved, so I'm sure we'll do stuff that's respectable. Nothing that will be embarrassing, but we can. Based on how successful these things are going or how they are, we can upgrade them later. 
+K
+Karan Bharadwaj
+17:47
+So what I'm understanding is that it. 
+S
+Shray Chandra
+17:48
+Will have a life today and it. 
+K
+Karan Bharadwaj
+17:50
+Will have a bigger life tomorrow. And so we should plan for some. 
+S
+Shray Chandra
+17:53
+Of them, like not all of them. I guess. Right. I mean that would be too arrogant to think all of them would do. No, but let's say just capit. Mine gets a whole bunch of funding and we're just like, we should just make stuff that's just higher quality then. Yeah, then everything could be upgraded even if some of them are very lightly used or something. Understood. The only reason I said things like 6 and 7. I'm sort of thinking about this currently. This is very much a personal thing for me right now. But the insight. So this can absolutely be used at Capital Mind. So there the question is do I want this to. Do I want to share this with capitalmind or not right now? I mean I am the majority owner of the company. 
+S
+Shray Chandra
+18:25
+I think as of today until like new investors come in, then things will change so we can take a call. But right now I'm like huh? How does it matter Whether it's company CapitalMind? We're all the same people, we're all friends, life is good. There's potentially a situation in the future where Capital Mind is maybe more and more owned by external people. And then I like, I don't want this to necessarily be shared, this one or two of these things, but I think we can take that. Look, I don't have day to day responsibilities at capitalmind really. I mean maybe once a week kind of I have responsibilities. Why I bring that up is I do have a lot of time to both share stuff, answer questions, iterate on stuff. 
+S
+Shray Chandra
+19:04
+This might be the most interesting thing I'm doing this year because the first five, six things, however small or uninteresting they may seem. I think there are very cool foundation layer for me to get to work with you guys and for you to understand a lot of stuff about how I think what we at capitalmine think about many of these things and then we can layer on within a few months. I mean heck, you're the engineers, right? Or you're the, you will be able to figure out hey look, you're thinking of it like this, but we can truly elevate this into something much more special. Whatever. 
+S
+Shray Chandra
+19:32
+Like if you were to ask me how to fuse AI on this stuff, I'll give you some very embarrassingly basic answer of it will be a bot you could like sorry, some chat interface, you can ask it questions, you don't have to play with the UI or something. That's really the best I can think of right now. But clearly you guys will be able to think far more than that. So. Which is why Karan Maybe the design have to take iterations, right? The first one I'm viewing these as. Can I call it flat for better tools or websites or web pages like take. Take what my spreadsheets are and turn it into a web page each. And maybe that would be the thing I can most understand initially. 
+S
+Shray Chandra
+20:06
+But then the moment you guys get involved with it, you will, or you see a pattern, you'll be like, it doesn't need to. I mean this can be one way of accessing it, but there can be other things. So, okay, very opinionated about how it is to be displayed. I'll let the users give feedback and let the network give feedback. Like, certainly if you're building a FHIR calculator and no one we send it to understands it, then we obviously have to change how things are. 
+K
+Karan Bharadwaj
+20:35
+So for that part of the process, one thing that we can do is a hand scan. So what we do is with hands and yourself and because you have some time that we can, some of your time that we can take, we can initially do a little bit of a small market research to see, you know, how these tools really are operating out there. I've taken a look at one or two myself. 
+K
+Karan Bharadwaj
+20:58
+And then we'll do some mood boarding with you so that you can like, we'll put like various things in front of you and we'll take you through that process and then we can come up with like a first version and then once we build it out and then we get user feedback, then we can keep updating it as people are talking about, especially on the UX front, as they're like, okay, this makes sense. This doesn't make sense. One question I have for this FHIR tool, do we need export functionality so that once you've done the assessment, maybe you want to export it. Do we ever want that? 
+S
+Shray Chandra
+21:29
+So what I remember we did for Kaplan plan when we had designed this like a decade ago, types we had, we reduced the plan to like a bunch of variable. It was almost like a bunch of variables. Like it is a string of text, like 10, 20 characters or whatever. And that is, that's the knowledge base for a plan that with those inputs the plan gets generated. So yeah, I think export would be useful. Like obviously it will be too demanding for us right now to allow people to create accounts and save them and all that stuff. I think that is probably not necessarily. You can take the call right now though, I am thinking of giving this to 10 people. It feels like overkill. 
+S
+Shray Chandra
+22:12
+What we had done there is we started saving it in some random string at the end and you could save it and then just with that random string you can what hashing. That's what they call it now where you just save it or whatever with some random string and then you can use that link to revisit it or update it and save it though I think you are saving it. But then I guess the question is if you just change a few things in the string, can you see someone else's plan and update it? 
+K
+Karan Bharadwaj
+22:35
+Yeah. 
+S
+Shray Chandra
+22:38
+So. 
+K
+Karan Bharadwaj
+22:41
+We'Ll sit and create a PRD for this. So I'll just very briefly highlight what I'm thinking is going to be the process and. Sure. You can you tell me if that works or not? 
+S
+Shray Chandra
+22:50
+Yeah. 
+K
+Karan Bharadwaj
+22:52
+On the side of the design, we'll start how I said that he. For the first one, he'll take a look at a bunch of things out there. I'll also have a chat with him, I also explain and then we'll sit with you maybe tomorrow or day after and we'll go through, we'll do some onboarding, etc. Once he's ready. On the back end front, we'll collect requirements. So I was. I'll sit and chat with them, but we'll collect requirements for a few of them. We can do one a day or two a day depending on what you prefer. But we'll start collecting requirements and start generating PRDs for that. 
+S
+Shray Chandra
+23:23
+Yeah. 
+A
+Ans James
+23:24
+Okay. 
+K
+Karan Bharadwaj
+23:24
+And then once the PRDs are done and we'll share them with you and we can walk you through it as well and you sign off once you say okay, this is what this makes sense. This is. 
+S
+Shray Chandra
+23:32
+Right. 
+K
+Karan Bharadwaj
+23:32
+Then we create like the technical doc which says this is the system that will be built. 
+A
+Ans James
+23:37
+Okay. 
+K
+Karan Bharadwaj
+23:37
+That also we'll share with you and we'll go through it together. This will be on the back one. 
+S
+Shray Chandra
+23:41
+Will I understand the technical one prd. I'm sure I can understand technical one. That will be like. I mean, will it just go over my head? Will I be able to add anything to that conversation? 
+K
+Karan Bharadwaj
+23:50
+you can. We'll. What we'll do is for every document that is produced, we can. 
+S
+Shray Chandra
+23:54
+We'll walk you through it, we'll sit with you and we'll go through it. 
+K
+Karan Bharadwaj
+23:57
+And then we can. For example, even if it is like talking about like a deep backend system, it'll still be structured in such a way that understandable that this is what this part does. This is what this part does. 
+S
+Shray Chandra
+24:08
+So you. 
+K
+Karan Bharadwaj
+24:08
+We can, we can try it and if it doesn't seem useful, then we'll truncate that process or it feels useful, then we can increase. It depends on your preference and how we do it. So that will be the back, roughly the backend flow that I'm seeing. And then they'll start the development sprints and then we'll start seeing, you know, 1, 2, 3, come out as we can scope it out and we can say, okay, this is how long it will take on the AI front. I think from six onwards or yeah, I think even five, six. Five or six onwards. I think that will be where a lot of the AI stuff will become like really powerful. 
+K
+Karan Bharadwaj
+24:43
+Of course it can be applied to all of these, but I think that's where really we can think of what the agent based structure is going to be. And so the way that we'll do it is we create like a small internal POC and we like put the agents and we'll see how the agents are behaving depending on which of these we are tackling. And then once that gets matured, that works well, then we'll start the same process of integrating with the backend and then the agentic layer and then you. 
+S
+Shray Chandra
+25:15
+Have the front end. 
+K
+Karan Bharadwaj
+25:16
+And that we'll really talk to you about. First we'll tell you about how we're thinking about what kind of agents will sit, what the agents will do, what essentially depending on which project you are on, where they'll get the data from and where they'll like sort of give insights and then we'll kind of follow the same process. We'll go through what we've uncovered and then we'll take your input and then we'll update and then we can start development. 
+S
+Shray Chandra
+25:46
+Post. 
+K
+Karan Bharadwaj
+25:47
+Does this sound good? 
+S
+Shray Chandra
+25:47
+Have I. Yeah, sounds good. I have a couple of reactions or points to make. So the first one that comes to mind is that currently in my mind each of these is not going to thousands of people. Right? These are in my mind, obviously. Let us hope that I'm dramatically wrong. And as the mutual fund and all scale, they all get like the, what is called the kiss of death or the hug of death, the Reddit hug of death as it used to be. But as of now, like this fire thing, I'm expecting some tens of or hundreds of people will use it over the next year. So why I bring that caveat is we, I don't know how is the right way to say this. We don't need to make it too. 
+S
+Shray Chandra
+26:28
+I don't want to say nice, but we don't need to make either. I'll defer to you because you also want to do work that you're proud of and you're satisfied by. I don't want to just take my spreadsheet and turn it into like a. Some spreadsheet on the Internet or whatever. Something that's not Google Docs. But then currently we don't know. I. I think since some iteration may happen based on what becomes popular and when, you may not have to make this too fancy. I mean, again, this is like my. That's the only thing I wanted to put on that in terms of timelines. I don't have a timeline for anything. I will put it. I can make a suggestion and maybe you answer it. But I don't want this to be a source of pressure for anyone. I'm saying this is. 
+S
+Shray Chandra
+27:10
+The natural cadence is like four to five weeks or six. Four to six weeks probably enough for this fire thing. I mean, or am I too less, too low? What am I doing? How does it sound when I talk about this? 
+K
+Karan Bharadwaj
+27:22
+To me it sounds too long, but I'll sort of have a sad among the team. And I also don't want to put. 
+S
+Shray Chandra
+27:29
+Don't put pressure. 
+K
+Karan Bharadwaj
+27:30
+Scope it out and then. 
+S
+Shray Chandra
+27:33
+Yeah, don't put pressure on the sense of. Look, I don't want people like doing something unsustainable because these are like the first 10 things I could think of. I hope to do 20. I mean, a lot of these and then as we do these, figure out some way of putting them together and all that stuff. So it should not be like everyone is collapsing because we're trying to push out some fire tool in two weeks that then 10 people will use in the next three months. And you'll be like, what did we just do? Like, so. Just wanted you to pace yourselves. This is almost. We've been doing. Again, I have a spreadsheet for everything here, so I'll just repeat that line. Everything here is actually a spreadsheet. On my other modern thing, which I want to. 
+S
+Shray Chandra
+28:10
+This is irrelevant, but everything here is probably a spreadsheet. Is a spreadsheet on my computer right now or on Google Drive right now. So I'm. This is as much a knowledge transfer from me to the relevant people of your team so that you can understand how we look at it. And these are, if I may use the expression, these almost toys for us all to build, for me to share with others, for you guys to play around with and understand this. 
+S
+Shray Chandra
+28:34
+And I think this will like, I don't let's say each thing is a month just for sake I don't think it will be but just for sake of argument let's say each thing is a month then we're talking what six months for the first six things max then I don't think that will be the case because some of them are truly trivial by the way. But anyway let's say each thing is a month just to be like provocative Then I think at the end of six months we'll have another 10 things and each of them will be far more interesting such complicated than what we've done. All that gets back to don't let me interfere with your process because everyone needs to do work they enjoy doing and feel good about and not some just act together nonsense that we've put together. 
+S
+Shray Chandra
+29:14
+But it is very likely that many of these will have tens or dozens of people using them for the first six months to one year. So don't can I use the word over design or over engineer given that in mind. But maybe you find that it's harder to revisit things later so I will defer to you if you want to do it a certain way. I'm not going to put my pressure on because I'm doing this as a at least a one year thing at the very even if everything is abject failure and we don't want at least a one year engagement of us working together but and probably hopefully we can build more and more interesting stuff from there. 
+K
+Karan Bharadwaj
+29:49
+This okay makes sense. Makes sense. So I have one or two questions Would you want this as a mobile app as well and any of these. 
+S
+Shray Chandra
+30:00
+So let me think this through. How much do I need to retire? This would only become more of a mobile app if many hundreds of people or thousands of people from capital mind are coming here for this India vs US I would think as of now I think this mobile friendly websites is good enough if I may put it app but yeah I mean honestly it would be I really hope that what we're doing becomes valuable enough that we want apps for like it could become one I really hope so but if you were to ask me today feels it will like I I mean I have to say it feels like a stretch but look I know the stuff we're building is interesting and many people have these questions on the Internet but look how much do I need to retire type stuff? 
+S
+Shray Chandra
+30:47
+Here's why I'm hesitating. How much do I need to retire type stuff? This is a question you have like maybe you use it intensely for a couple of days or a week when you're building a plan, you kind of don't look at this much. Maybe once we hear at most like other than the. The few type of people who are like finance nerds per se, most people are not visiting this. I mean something they've said it's almost like a PDF you could put out and keep something that would be, if I may put it that way, India versus us. I mean I'm thinking of it as a website. I don't think it needs to be an app. Which mutual fund should I understand? 
+S
+Shray Chandra
+31:18
+This certainly can be an app if it does well, but not just yet with pmss, I think app can very much phase wait for post six months. My understanding is building an app is much harder. Right, that's my understanding or much more work. So as of now, I can't say any of this streaming for the app other than when we get to seven, eight, nine types. Those are almost like. I mean those are very big things. I mean I just, I mean I'll share numbers because we'll all get to know each other, but we're managing them. 80 million dollar portfolio. That's like 600 crores. 88. Yeah, 650 crores in that foreign code for the stuff it's happening on spreadsheets. Maybe this does deserve to be an app at some point. The stock identification stuff. I guess it's the same app. 
+S
+Shray Chandra
+31:59
+I mean it's just another layer on top of it's seven, eight of the same. Maybe I should just keep it or one is a UI layer, one is a action layer based on the thing 9. Well, I don't know if this means an app, but this is like our whole, my whole family's financial assets shared with me once a month in a spreadsheet format. Understood much later but maybe we can do something more intelligent with this so that you can compare. Yeah, I'll just pause here. This tool will act. This tool will actually be quite useful. 
+K
+Karan Bharadwaj
+32:29
+I think because it'll. If there's a decent AI layer to consume this information in a more user then actually this tool could be. 
+S
+Shray Chandra
+32:38
+And by the way, not to get ahead of ourselves but I think the stack, if I may call it stack or whatever or basket of tools we are building. Maybe that's a better way of putting it. This will all feed into like if and when we're ready to take forward aplenty seriously that other project that we've understood. I can probably just build off of these so we can spin this off into a different something But I don't want to. This is very much in my control. I am really the only client user here. So rather than bringing up plenty where immediately the stakes become higher because of all that stuff, we can work on this and Apprentice can add to this. But that's relevant for now. Okay, enough here. There's truly enough here. There's many millions of dollars to manage and make sense. 
+K
+Karan Bharadwaj
+33:21
+So what we'll do is we'll optimize for web for now and then we'll optimize for mobile as a phase two, because porting it is not as hard as like optimizing it for either one. So we'll optimize it for web and then later we will optimize it for mobile so that some of it can be consumed on mobile. It makes sense. On the first, the fire one. 
+S
+Shray Chandra
+33:45
+This is the. 
+K
+Karan Bharadwaj
+33:46
+Actually this one is a little bit straightforward. If you can share this Excel sheet with me once and then I'll share with the team as well and then we will start creating the PRD for this, the third one. 
+S
+Shray Chandra
+34:07
+You can just duplicate. This one is extremely straightforward. The math, by the way, we can do, however, I mean, whenever you're ready to like start taking a dump from this on me, I'll just talk through this for two minutes. Two, three minutes now. Yes, please do. Let's look at version. I've not looked at version 2. That someone I was working asking to make a version because she made it. But let's just look at version. We're saying this person makes $10 million at some point in your life. Inflation is 6%, so costs go up by 6% a year. And we would like to spend. Let's just call it 300, $400,000. That seems too high. Let's make it clear. So how does it work? Like literally, I will literally just talk you through these columns and it will take us a few minutes. 
+S
+Shray Chandra
+34:48
+The first one serial number the year the person's age. She's 31. She currently has no savings or irrelevant savings, less than zero. Regular spending from portfolios to the extent that there's annual expenditure that needs to happen. What's the regular spending to the portfolio? That's a 300,000 adult spending is something like in 10 years I plan to do something for like scholars or whatever growth in portfolio is. You'll see every year we start there with a certain number, take out what you need for that you're spending and then grow it by something. You said 10%. And the portfolio grows to is. Is adding like what the growth is. If you've added anything this year, what do you end the year with? Price level is the first maybe finance concept I have here, in case you guys haven't heard of it before. 
+S
+Shray Chandra
+35:32
+But it's like $1 is worth $1 today, but next year one, the prices are all 6% higher, and so on and so forth. So I think the first time you see this is when this person is spending money in year six. Over here we've said that the expenditure is only $300,000, right? But given that inflation has happened, by the time 6 comes along, the person actually has to spend $400,000 for the same 300. What you think of as 300 today will be 400. So you need to spend 400 to have the same quality of life and so on. So I was in fact going to add, I might add a column or two saying what this means and so on. I'll wait to understand that. More risk. 
+S
+Shray Chandra
+36:13
+If you look at it, let's just take year 20, according to this, you have 26.3 million two, $9 million in your net worth or savings. But if you want to put that into context, if you divide by the new price level, that's like $8.7 million today. Nothing wrong with that. But the point is, inflation makes all these numbers just become like a joke. Like, if you go here, you're talking what, $467 million in years 2094, but that's like equal to $8.4 million today. So that's really why you have this. And that's how I had come up with the number 400,000. I was like, now we'd add some more intelligent stuff to this. By the way, when you get to it, like right now, the growth in the portfolio is a flat 10% every year. 
+S
+Shray Chandra
+37:00
+I remember when I was making some spreadsheets for these people 10 years ago, which I realized no one cared about, it was like, hey, you know, let's try and add some normal, like some noise to it. Some years are 12, some years are 8 and so on, or some years are negative, some years are more positive. So that could be one and can be random. Every time you hit refresh, or I guess it's app, or every time it looks a little different. Then there was one of, can you add a thing that every five years there's a recession, or every 10 years there's one shock to the market and then it recovers in the next couple of years and so on. So like a big scale because the reason that matters is there is part dependency. 
+S
+Shray Chandra
+37:32
+Like what if the 400,000 you're taking out here, the market was 30% that year, so your portfolio fell from like 10 to 7 and then you took out 200,000 when it was down at 7 and so on. So there is some math, not math, but conceptual enhancements you can do here to make this a more useful thing. The only thing I would like to say about this FHIR tool is I think we could start with the thing where a person wants to have the simplest version to engage with first. And then they say, oh, what about adding this? What about adding this? What about adding. So what I have here is, if I may, I would like to consider the simplest possible version where hey, you have a certain amount of money. Inflation is the same for the next 70 years. 
+S
+Shray Chandra
+38:14
+Your portfolio grows by the same amount every year for the next 70 years. And we can make this more complicated over time. The capital Mine Plan 1 is reasonably complicated. Actually we have inflation may change in the future years or something like that. And till you're earning you can take, you can invest a higher number and once you've retired, you invest at a lower return and so on. So there is stuff, these calculators can become extremely powerful tools. But again, the point here is actually I found that's not what we're going for. The point is to help people get some level of comfort or intuition around. If I get $10 million, what is it good for? Or if I get one india, 2 crore, 5 crore, 10 crore rupees, what does it really mean for me? What can I do? 
+S
+Shray Chandra
+38:56
+There is actually a rule of thumb. It says that if you think the world will invest in things that will give you say 8% and inflation is 4%, then 8 minus 4, you can spend 4% every year. This is like a one line version of this sheet. So let's just play it again. Let's say you think you'll get 10% returns of your money saved and inflation is 6% or inflation is 5%, then you can consume 5% every year for the rest of your life as adjusting for inflation. So as if inflation was because of just a man. So that 5% then corresponds to a rule of 25. Like if you say so, therefore how much do I need to do? 200,000 per year, it's 200,000 divided by 5%. And then it becomes like rule of it. So the common rule Is Rule of 33. 
+S
+Shray Chandra
+39:42
+Because they say that you could, if you have something saved, you can Use, you can take three, the 3.3% of that out every year. So if there's a rule of 33, if you want to spend $100,000 a year, you need 3.3 million. This is a one line version of it. Unfortunately, it convinces no one. Like if you tell someone, hey, you have $10 million, that means you can spend $330,000 every year. Assuming there is no inflation. The person is like, I barely know what inflation is. Like, what is this? No inflation, how can I spend 300? Doesn't sound possible. And you just really lose the people. So the point of the tool has to be to help people build some intuition around how much money is needed or what money can do. Not build a demanding, exacting plan. 
+S
+Shray Chandra
+40:21
+Because the last point I'll share with you is I found that if people just invest, then you're far ahead of whatever you need, always. And if you don't invest, then no amount of planning makes it work. So this is just about building comfort around numbers and reducing the anxiety and bringing it down to a formula. Because otherwise you can make this endlessly complicated. I have two kids. I'm not going to pay for school for one. I'll pay for school for the other. I will pay for college for that person. I will not pay. You can make it extremely complicated and maybe you should. But the goal is really to build some intuition around this and let the casual user engage casually and a more determined user add the complexity as they go along. Spreadsheets are quite. 
+S
+Shray Chandra
+41:02
+If you look at plan, we put in a lot of thought into plan. As you know, the challenge became that people giving you 50 lakhs or 1 crore to manage don't care about this. That was the issue we faced. But now with the mutual fund coming, like the tool you guys built can have a, might have a future. Sorry, I'll stop talking on this. But that is the customer motivation. That's the motivation at the level of understanding or complexity that the customer is kind of comfortable with. Give them an understanding of what their money is. 
+A
+Ans James
+41:33
+Good. 
+K
+Karan Bharadwaj
+41:34
+Okay, understood. This I can share with the team, right? 
+S
+Shray Chandra
+41:38
+This everything I'll send you can share with the team, but you may want to make a duplicate and then share. 
+A
+Ans James
+41:45
+Yeah. 
+K
+Karan Bharadwaj
+41:47
+I'll do that. I'll make a duplicate and share it. 
+S
+Shray Chandra
+41:54
+All right, look, I do have a lot of time, folks, other than say Thursday. I'm not traveling anywhere for the next eight weeks, which is rare. And I plan to not travel much for the rest of the year. And I'm not Don't have a day job by design or. I'm trying my best to not have a day job other than say one day a week for the next rest of this year. So to that extent, I'm. This is my top priority. What that means is I'm very much available and very happy to engage with you guys and see what we. So it might be fun for me. 
+K
+Karan Bharadwaj
+42:25
+Okay. I was thinking that we can. Based on this. Anything else you want to share about this tool or is this. 
+S
+Shray Chandra
+42:32
+This is enough. If you look at these two, you'll get. Get enough. What I can say is that if. If you guys so wish, I can do a walkthrough of capital mind plan for you guys or something. 
+K
+Karan Bharadwaj
+42:45
+Yeah. Yes, that would be very nice. 
+S
+Shray Chandra
+42:47
+Oh, by the way, I think back in the day there's a video tutorial. It still exists. You can click on the video tutorial once if you want to. We had made one using the screenshot thing. 
+K
+Karan Bharadwaj
+43:03
+Plan.CapitalMindWealth.com okay, paste it in this thing. 
+S
+Shray Chandra
+43:08
+I'll put it on there. Yeah. All right. You can actually share ultimately what current you do. Just share this with your colleagues, but share it. Give them view access so that if they want to edit it, that's just easy enough. That way, if I'm. Okay, yeah. 
+K
+Karan Bharadwaj
+43:24
+I'll make a working version where we work on together. 
+S
+Shray Chandra
+43:32
+Just so that someone inadvertently doesn't delete something. 
+K
+Karan Bharadwaj
+43:34
+That's. Yeah, understood. Got it. 
+S
+Shray Chandra
+43:36
+Correct. 
+A
+Ans James
+43:38
+Okay, we'll go. 
+K
+Karan Bharadwaj
+43:39
+So what we'll do next is go through the Capital Mind platform, go through the video tutorial, go through the Excel sheet and come up with a prt. We can probably. We can do. We can do another call tomorrow if you're okay with it. And I was hoping tomorrow we can maybe also look at. One second, I'll just open the other sheet. We'll also maybe look at one other of these tools. 
+S
+Shray Chandra
+44:05
+Discuss 1 US vs India 1 is very easy to do. It's literally just point to point returns comparison. You can get the data from Yahoo Finance. It's trivial to do and it's quite useful. You might be shocked by the numbers yourself. 
+K
+Karan Bharadwaj
+44:19
+Okay, great. Awesome. So we'll do that. So tomorrow we come back with some more questions on the first one. We'll try to. We'll try to see if we can have the PRD done. Probably take another day. Probably Wednesday would be the day for the pr. 
+S
+Shray Chandra
+44:33
+Don't. Don't commit to any timelines. I'm happy for you guys to do. What the. I quite enjoy this Process as, you know, do what is sensible. That's all. Because I'm. I'm not looking for someone to push themselves more than a healthy pace. I mean. 
+A
+Ans James
+44:49
+Yeah, okay. 
+K
+Karan Bharadwaj
+44:51
+And then on Wednesday we can have like. And I think two days is enough, right, for you to have some mood boarding. 
+S
+Shray Chandra
+44:59
+Yeah, I'm thinking like research, let's keep some time. But today's, let's see, like, how it goes. Okay. 
+K
+Karan Bharadwaj
+45:09
+So he'll confirm on when we can do some mood bodying and probably later in the week is what he's thinking. 
+S
+Shray Chandra
+45:14
+I have some similar projects that we. 
+K
+Karan Bharadwaj
+45:16
+Didn'T call Agenda, so that research might be also useful. Okay. 
+S
+Shray Chandra
+45:21
+Okay. 
+K
+Karan Bharadwaj
+45:21
+So tentatively we'll pencil in Wednesday, but if Wednesday is too early, then we'll push to Thursday. 
+S
+Shray Chandra
+45:27
+So Thursday you'll have to be a bit late post 4 because we're doing that. So one day I'm doing a couple. I'm going to Capital mine this week for video recording, but that's it. Again, as I'm saying, I'm. I'm doing. I think this is investment in us. I really hope this works out and we enjoy working together on these projects because I feel that if you put together these pieces, you'll know what we've learned over the last eight, nine years and how to explain them and then we can start doing more interesting stuff. Coming. That's really it. Which is why I'm not putting any pressure on the push out this fast because it may turn out that we don't care about any of these six, seven things. 
+S
+Shray Chandra
+46:04
+Like they're used for demos every now and then, but what comes after that might be more useful. So let's not take sense of pressure. When you're done, we can speak for five minutes. You can call me after. I'll just give five more minutes. You can just give me a call. 
+K
+Karan Bharadwaj
+46:22
+Okay, I'll give you a call at 4 then. 
+A
+Ans James
+46:23
+Sure. 
+S
+Shray Chandra
+46:23
+Anyway, it was great meeting everyone, looking forward to this and I'm quite free, so very happy to spend time on this. 
+K
+Karan Bharadwaj
+46:31
+Okay. All right, talk to you soon. Thank you so much. 
+A
+Ans James
+46:35
+
+Bank. 
+Sync with audio
+38:5849:03
+1×
+
+
+
+
+
+
+
+
